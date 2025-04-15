@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="eventTracker.js"></script>
+    <script src="textAnalyzer.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html"><button class="nav-button">Home</button></a>
+        <a href="aboutme.html"><button class="nav-button">About Me</button></a>
+        <a href="education.html"><button class="nav-button">Education</button></a>
+        <a href="skills.html"><button class="nav-button">Skills</button></a>
+        <a href="textAnalysis.html"><button class="nav-button">Text Analysis</button></a>
+        <button class="nav-button" onclick="handleCV()">CV</button>
+    </nav>
+
+    <div class="analysis-container">
+        <h1 class="headingsabm">Text Analysis</h1>
+        <textarea id="textInput" class="analysis-input" placeholder="Enter text (minimum 10000 words)..."></textarea>
+        <button class="analysis-button" onclick="analyzeText()">Analyze Text</button>
+        <div id="analysisResults" class="analysis-results"></div>
+    </div>
+</body>
+</html>

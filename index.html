@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="My personal website">
+        <meta name="author" content="Your Name">
+        <title>My First webpage</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="eventTracker.js"></script>
+    </head>
+    
+    <body>
+        <div class="container">
+            <h1 class="headings">HI</h1>
+            <p1 class="text">Im <strong>Anivarth</strong></p1>
+            <p class="text">A first year CS student at IIIT Hyderabad</p>
+            <p class="text">Im interested in Design, Photography, and Frisbee</p>
+            <button class="button1"><a href="aboutme.html">About Me</a></button>
+            <button class="notbutton1"><a href="education.html">Education</a></button>
+            <button class="notbutton1"><a href="skills.html">Skills</a></button>
+            <button class="notbutton1"><a href="images/cv.pdf" download="Anivarth_CV.pdf">CV</a></button>
+        </div>
+
+        <div class="pfp">
+            <img src="images/ChatGPT Image Apr 7, 2025, 12_40_19 PM.png" alt="Profile Picture" width="300" height="300">
+        </div>
+
+        <script>
+            function handleCV() {
+                const link = document.createElement('a');
+                link.href = 'images/cv.pdf';
+                link.download = 'Anivarth_CV.pdf';
+                link.target = '_blank';
+                link.click();
+            }
+        </script>
+    </body>
+</html>
