@@ -5,7 +5,7 @@ const articles = ['a', 'an'];
 function analyzeText() {
     const text = document.getElementById('textInput').value;
     
-    // Basic statistics
+    
     const stats = {
         letters: text.match(/[a-zA-Z]/g)?.length || 0,
         words: text.trim().split(/\s+/).length,
@@ -14,7 +14,7 @@ function analyzeText() {
         specialSymbols: text.match(/[^a-zA-Z0-9\s]/g)?.length || 0
     };
 
-    // Tokenization
+    
     const words = text.toLowerCase().match(/\b\w+\b/g) || [];
     
     // Count analyses
